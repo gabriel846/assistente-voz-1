@@ -1,3 +1,4 @@
+
 import Speech_recognition as sr
 
 
@@ -11,10 +12,10 @@ def reconhece():
             try:
                 audio = rec.listen(s)
                 entrada = rec.recognize_google(audio, Language="pt")
-                return "Você disse {}".format(entrada)
+                return "nao entendi oque vc disse irmao {}".format(entrada)
 
             except sr.UnknownValueError:
-                return "nao entendi nada"
+                return "wtf broo"
 
 
 fala -reconhece()
